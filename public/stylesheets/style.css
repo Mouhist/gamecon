@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body, html{
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  align-items: center;
+  background: url(../images/backgroundLogin.png) no-repeat fixed center hsl(282, 96%, 11%);
+  display: flex;
+  justify-content: center;
+}
+
+.caixaLogin{
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 31px;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login{
+  display: flex;
+  align-items:center ;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logoUsuario{
+  height: 80px;
+  width: 80px;
+}
+
+input{
+  text-align: center;
+}
