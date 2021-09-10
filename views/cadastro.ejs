@@ -1,1 +1,35 @@
-<h1><%= title%></h1>
+<%- include("./partials/header") %>
+
+<img class="logoUsuario" src="/images/logoUsuario.png">
+<main class="caixaLoginCad">
+    <h1 class="entre">Crie sua conta</h1>
+    <form class="login" action="/login" method="POST">
+        <div class="nomeCad">
+            <input type="text" name="usuario" placeholder="Nome de usuário">
+            <input type="text" name="usuario" placeholder="Seu nome" >
+        </div>
+        <div class="sexoDataCad">
+            <select name= "sexo">
+                <option value="Masculino"></option>
+                <option value="Feminino"></option>
+            </select>
+            <input class="data" type="date" name="data" placeholder="Data de nascimento">
+        </div>
+        <div class="emailCad">
+            <input type="email" name="email" placeholder="E-mail">
+            <input type="email" name="email" placeholder="Confirme seu E-mail">
+        </div>
+        <div class="senhaCad">
+            <input type="password" name="senha" placeholder="Senha">
+            <input type="password" name="senha" placeholder="Confirme sua senha">
+        </div>
+    </form>
+    <div class="loginRedes">
+        <img class="redes" src="/images/logoFace.png">
+        <img class="redesG" src="/images/logoGoogle.png">
+        <img class="redes" src="/images/logoTwitch.png">
+    </div>
+    <button class="botao" type="button">Cadastrar</button>
+    <hr> 
+</body>
+</html>
