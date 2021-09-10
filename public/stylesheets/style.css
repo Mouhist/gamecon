@@ -2,28 +2,79 @@
   margin: 0;
   padding: 0;
 }
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
 body, html{
   height: 100%;
   width: 100%;
 }
 
-body {
-  align-items: center;
+body {  
   background: url(../images/backgroundLogin.png) no-repeat fixed center hsl(282, 96%, 11%);
-  display: flex;
-  justify-content: center;
+  text-align: center;
+}
+
+.botao{
+  background: radial-gradient(50% 50% at 50% 50%, rgba(66, 0, 254, 0.83) 60.42%, rgba(66, 0, 254, 0) 100%);
+  border: none;
+  color: white;
+  width: 150px;
+  height: 15px;
+  font-size: 15px;
+  margin-bottom: 30px;
 }
 
 .caixaLogin{
+  align-self: center;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 31px;
-  width: 400px;
-  height: 400px;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  height: 500px;
+  justify-content: center;
+  margin: 0 auto;
+  width: 500px;
 }
+
+body .caixaMenu{
+  flex-direction: row;
+  width: 100%;
+}
+
+
+.menu a{
+  padding: 20px;  
+
+}
+
+.divisoria{
+  background: rgba(196, 196, 196, 0.5);
+  height: 5px;
+  width: 350px;
+  border-radius: 50px;
+}
+
+.entre{
+  padding: 20px;
+  color: white;
+
+}
+
+body header{
+  width: 100%;
+
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+}
+
 
 .login{
   display: flex;
@@ -32,11 +83,66 @@ body {
   flex-direction: column;
 }
 
-.logoUsuario{
-  height: 80px;
-  width: 80px;
+.login, input{
+  padding: 10px;
+  width: 250px;
+  border-radius: 21px;
+  text-align: center;
+
+
 }
 
-input{
+.logo{
+  align-self: flex-start;
+}
+
+body .logoUsuario{
+  align-self: center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 62%, rgba(0, 0, 0, 0) 50%);
+  border-radius: 50px;
+  height: 80px;
+  justify-content: center;  
+  margin-bottom: -30px;
+  width: 80px;
+  z-index: 1;
+}
+
+
+
+.loginRedes{
+  padding: 20px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.login input.usuario{
+  margin-bottom: 20px;
+}
+
+.problemaDeLogin{
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+
+.redes{
+  width: 40px;
+}
+
+.redesG{
+  width: 37px;
+}
+
+.usuario, .senha{
+  background: linear-gradient(180deg, rgba(186, 184, 184, 0) 0%, rgba(186, 184, 184, 0.85) 75.52%);
+}
+
+
+::-webkit-input-placeholder{
+  color: rgba(203, 203, 203,0.6);
+  font-weight: bold;
 }
