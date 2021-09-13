@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background: url(/images/backgroundNews.png) no-repeat fixed center hsl(282, 96%, 11%);
+}
+
+.barrasFixas{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: "s s s"
+                         "e f d"  ;
+    grid-template-columns: 1fr 8fr 0.8fr;
+    grid-template-rows: 10vh 90vh;
+
+}
+
+.superior{
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 21px;
+    grid-area: s;
+}
+
+.esquerda{
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 21px;
+    grid-area: e;
+}
+
+.caixaEsquerda{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px;
+}
+
+.caixaEsquerda a{
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.caixaEsquerda a img{
+    margin-right: 10px;
+}
+
+.caixaEsquerda h3{
+    color: #A19E9E;
+    margin-top: -5px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+}
+
+
+.caixaFeed{
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 21px;
+    grid-area: f;
+}
+
+.caixaFeed .tituloNews h1{
+    background-image: linear-gradient( #06FDDF  31.25%, rgba(255, 255, 255, 0)  100%);
+    background-clip: text;
+    color: black;
+    font-size: 70px;
+    text-align: center;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+.caixaFeed .tituloNews h2{
+    background-image: linear-gradient( #06FDDF  31.25%, rgba(255, 255, 255, 0)  100%);
+    background-clip: text;
+    color: black;
+    font-size: 45px;
+    text-align: center;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+.caixaFeed .card{
+    margin: 20px;
+    background-color: #959090;
+}
+
+.direita{
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 21px;
+    grid-area: d;
+}
