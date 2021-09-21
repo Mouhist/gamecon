@@ -1,23 +1,25 @@
 <%- include("./partials/header") %>
 
-<img class="logoUsuario" src="/images/logoUsuario.png">
-<main class="caixaLogin">
-  <h1 class="entre">Entre com sua conta</h1>
-  <form class="login" action="/login" method="POST">
-      <input class="usuario" type="text" name="usuario" placeholder="Usuário / E-mail" >
-      <input class="senha" type="password" name="senha" placeholder="Senha">
-  </form>
-  <div class="loginRedes">
-      <img class="redes" src="/images/logoFace.png">
-      <img class="redesG" src="/images/logoGoogle.png">
-      <img class="redes" src="/images/logoTwitch.png">
-  </div>
-  <button class="botao" type="button">Entrar</button>
-  <div class="divisoria"></div><br>
-  <div class="problemaDeLogin">
-     <a href="#">Não estou conseguindo fazer login?</a><br>
-     <a href="#">Não tenho cadastro!</a>
-  </div>
+  
+  <main class="caixaLogin">
+    <img class="logoUsuario" src="/images/logoUsuario.png">
+    <h1 class="entre">Entre com sua conta</h1>
+    <form class="login" action="/login" method="POST">
+        <input class="usuario" type="text" name="usuario" placeholder="Usuário / E-mail" >
+        <input class="senha" type="password" name="senha" placeholder="Senha">
+    </form>
+    <div class="loginRedes">
+        <img class="redes" src="/images/logoFace.png">
+        <img class="redesG" src="/images/logoGoogle.png">
+        <img class="redes" src="/images/logoTwitch.png">
+    </div>
+    <button class="botao" type="button">Entrar</button>
+    <div class="divisoria"></div><br>
+    <div class="problemaDeLogin">
+      <a href="#">Não estou conseguindo fazer login?</a><br>
+      <a href="#">Não tenho cadastro!</a>
+    </div>
+  </div>  
 </main>
 
 </body>
